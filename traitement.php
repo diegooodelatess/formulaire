@@ -1,5 +1,5 @@
 <?php
-// Vérifier que le formulaire est envoyé en POST
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $nom = $_POST['nom'] ?? '';
