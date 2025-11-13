@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire simple</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form method="POST" action="traitement.php">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required minlength="2" maxlength="50"><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="sexe">Sexe :</label>
+        <select id="sexe" name="sexe" required>
+            <option value="">--Choisir--</option>
+            <option value="H">Homme</option>
+            <option value="F">Femme</option>
+        </select><br><br>
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+
+        <label for="loisirs">Loisirs :</label>
+        <input type="text" id="loisirs" name="loisirs"><br><br>
+
+        <label for="animaux">Animaux de compagnie :</label>
+        <input type="text" id="animaux" name="animaux"><br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
