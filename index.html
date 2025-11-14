@@ -5,61 +5,68 @@
     <title>Formulaire simple</title>
 </head>
 <body>
+
     <h1>Formulaire d'inscription</h1>
+
     <form method="POST" action="traitement.php">
         <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required minlength="2" maxlength="50"><br><br>
+        <input type="text" id="nom" name="nom" required minlength="2" maxlength="50">
+        <br><br>
 
         <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
 
         <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" required minlength="6"><br><br>
+        <input type="password" id="password" name="password" required minlength="6">
+        <br><br>
 
         <label for="sexe">Sexe :</label>
         <select id="sexe" name="sexe" required>
             <option value="">--Choisir--</option>
             <option value="H">Homme</option>
             <option value="F">Femme</option>
-        </select><br><br>
+        </select>
+        <br><br>
 
         <label for="ville">Ville :</label>
-        <input type="text" id="ville" name="ville" required><br><br>
+        <input type="text" id="ville" name="ville" required>
+        <br><br>
 
         <label for="loisirs">Loisirs :</label>
-        <input type="text" id="loisirs" name="loisirs"><br><br>
+        <input type="text" id="loisirs" name="loisirs">
+        <br><br>
 
         <label for="animaux">Animaux de compagnie :</label>
-        <input type="text" id="animaux" name="animaux"><br><br>
+        <input type="text" id="animaux" name="animaux">
+        <br><br>
 
         <button type="submit">Envoyer</button>
     </form>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(166, 146, 146);
+            margin: 0;
+        }
+
+        form {
+            width: 355px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 35px;
+            padding: 50px;
+            font-size: 34px;
+        }
+    </style>
+
 </body>
 </html>
-
-
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    background: rgb(166, 146, 146);
-    margin: 0;
-    }
-
-    form {
-    width: 355px;
-    margin: 50px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-        text-align: center;
-        margin-top: 35px;
-        padding: 50px;
-        font-size: 34px;
-
-    }
-</style>
-
