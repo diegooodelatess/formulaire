@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (erreurs.length > 0) {
-            event.preventDefault(); // Empêche l'envoi du formulaire
+            event.preventDefault();
             alert(erreurs.join("\n"));
         }
     });
